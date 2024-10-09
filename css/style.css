@@ -89,4 +89,10 @@ background-color: #fbfbfb;
 
 footer {
     text-align: center;
+
+}
+
+input, select, textarea {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
 }
