@@ -5,6 +5,7 @@
         <meta name="description" content="Contact page"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Contact</title>
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header> 
@@ -19,6 +20,21 @@
         </header> 
         <main>
             <h1>Contact</h1>
+            <form method="post">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" class="form__input" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form__input" required>
+                <label for="guitar">Guitar</label>
+                <select id="select-guitar" >
+                    <option value="Adirondack Red">Adirondack Red</option>
+                    <option value="Adirondack Blue">Adirondack Blue</option> <option value="Adirondack Green">Adirondack Green</option>
+                </select>
+                <input type="checkbox" id="email-updates" name="email-updates">
+                <label for="email-updates">Sign up for email details.</label>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <input type="submit" value="Send Now" class="cta">
         </main>    
         <footer>
             Copyright &copy;
