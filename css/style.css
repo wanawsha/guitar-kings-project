@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'BootsAndSpurs';
-    src: url('../fonts/BootsAndSpurs.ttf') format('truetype');
+    src: url('../fonts/BootsAndSpurs.woff2') format('woff2'),
+         url('../fonts/BootsAndSpurs.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,9 +12,19 @@ body {
 
 
 h1, h2, h3 {
-    font-family: 'BootsAndSpurs'
+    font-family: 'BootsAndSpurs';
 }
 
+
+nav li {
+    display: inline-block;
+    
+}
+
+nav {
+    padding: 20px;
+    background-color: #636363;
+}
 .logo
 {
     font-family: 'BootsAndSpurs';
@@ -60,7 +71,7 @@ footer{
 }
 
 header a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -87,6 +98,12 @@ background-color: #fbfbfb;
     border-radius: 1px;
 }
 
+.current { 
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
 footer {
     text-align: center;
 
@@ -94,5 +111,5 @@ footer {
 
 input, select, textarea {
     border: 1px solid #c4c4c4;
-    border-radius: 5px;
+    border-radius: 4px;
 }
