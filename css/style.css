@@ -61,7 +61,6 @@ nav {
     height: auto;
     border-radius: 50%;
 
-
 }
 
 header, 
@@ -73,10 +72,7 @@ footer{
 header a {
     color: #ffffff;
     text-decoration: none;
-}
-
-.featured-products { 
-background-color: #fbfbfb;
+    padding: 10px;
 }
 
 .reviews {
@@ -84,18 +80,45 @@ background-color: #fbfbfb;
 }
 
 .cta {
-    background-color: red;
-    color: #fff;
+    font-size: 0.9em;
+    text-transform: uppercase;
     text-decoration: none;
-    border-radius: 1px;
+    background: red;
+    color: #fff;
+    padding: 10px 80px;   
+    border-radius: 5px;
 
 }
 
-.cta-sale {
+.cta-small {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: red;
+    color: #fff;
+    padding: 8px 30px;   
+    border-radius: 5px;
+}
+
+#viewguitars-cta {
+    position: fixed;
+    left: 150px;
+    
+}
+
+header welcome {
+    position:
+
+    
+
+}
+#cta-sale {
     background-color: green;
     color: #fff;
     text-decoration: none;
-    border-radius: 1px;
+    border-color: green;
+    padding: 8px 30px;   
+    border-radius: 5px;
 }
 
 .current { 
