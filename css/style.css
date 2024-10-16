@@ -27,7 +27,6 @@ header {
     
 }
 
-
 nav li {
     display: inline-block;
     
@@ -40,16 +39,11 @@ nav {
     margin-left: 25px;
 }
 
-
-
 header a {
     color: #ffffff;
     text-decoration: none;
     padding: 10px;
 }
-
-
-
 
 .welcome {
         background-image: url('/images/home-header.jpg');
@@ -100,8 +94,6 @@ header a {
     flex: 1
 }
 
-
-
 .reviews {
     background-color: rgb(227, 227, 227);
 }
@@ -127,8 +119,6 @@ header a {
     border-radius: 5px;
 }
 
-
-
 #cta-sale {
     background-color: green;
     color: #fff;
@@ -143,9 +133,6 @@ header a {
     text-decoration: underline;
     
 }
-
-
-
 
 footer {
     text-align: center;
