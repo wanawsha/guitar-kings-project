@@ -38,9 +38,15 @@ nav {
         background-repeat: no-repeat; 
         padding: 50px 20px; 
         color: white; 
-        max-width: 100%;
-        width: auto;
-        height: 500px;
+        min-height: 70vh;
+        position: relative;
+}
+
+.welcome__content {
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    left: 100px;
 }
 
 
@@ -100,14 +106,7 @@ header a {
     border-radius: 5px;
 }
 
-#viewguitars-cta {
-    position: fixed;
-    left: 150px;
-    
-}
 
-header welcome {
-}
 
 #cta-sale {
     background-color: green;
@@ -123,6 +122,9 @@ header welcome {
     text-decoration: underline;
     
 }
+
+
+
 
 footer {
     text-align: center;
