@@ -11,8 +11,20 @@ body {
 }
 
 
-h1, h2, h3 {
+h1, h2, h3, .logo {
     font-family: 'BootsAndSpurs';
+}
+
+header, 
+footer{
+    background-color: #000000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    
 }
 
 
@@ -22,13 +34,22 @@ nav li {
 }
 
 nav {
-    padding: 20px;
-    background-color: #636363;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    margin-left: 25px;
 }
-.logo
-{
-    font-family: 'BootsAndSpurs';
+
+
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
 }
+
+
+
 
 .welcome {
         background-image: url('/images/home-header.jpg');
@@ -57,29 +78,29 @@ nav {
 }
 
 #home-info {
-    width: 700px;
+    width: 500px;
     height:auto;
     border-radius: 100px;
 }
 
 .review-profile {
-    width: 300px;
+    width: 80px;
     height: auto;
     border-radius: 50%;
 
 }
 
-header, 
-footer{
-    background-color: #000000;
-    color: #fff;
+.selling-points {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
 }
 
-header a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px;
+.selling-points > * {
+    flex: 1
 }
+
+
 
 .reviews {
     background-color: rgb(227, 227, 227);
