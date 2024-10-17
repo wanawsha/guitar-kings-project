@@ -45,6 +45,9 @@ header a {
     padding: 10px;
 }
 
+
+/*Home Page*/
+
 .welcome {
         background-image: url('/images/home-header.jpg');
         background-size: cover; 
@@ -124,6 +127,8 @@ header a {
     background-color: rgb(227, 227, 227);
 }
 
+
+
 .cta {
     font-size: 0.9em;
     text-transform: uppercase;
@@ -163,11 +168,13 @@ header a {
 
 .contact {
     max-width: 1000px;
-    margin: auto;
+    margin: 50px auto;
+    text-align: center;
 }
 
 .form-wrapper {
     display: flex;
+    text-align: left;
 }
 
 .form-wrapper > * {
