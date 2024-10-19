@@ -47,15 +47,6 @@ nav {
 }
 
 
-#hamburger-menu {
-    display: none;
-  }
-  
-  #hamburger-menu:checked ~ nav {
-    display: block;
-  }
-  
-
 header a {
     color: #ffffff;
     text-decoration: none;
@@ -148,7 +139,6 @@ header a {
 }
 
 
-
 .cta {
     font-size: 0.9em;
     text-transform: uppercase;
@@ -156,6 +146,26 @@ header a {
     background: red;
     color: #fff;  
     border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.cta:before {
+    content: '';
+    padding: 10px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    height: 100px;
+    top: -40px;
+    left: -100px;
+    transition: left ease-in-out 1s;
+    opacity: 0.3;
+}
+
+.cta:hover:before {
+    left: 110%;
 }
 
 .cta-large {
@@ -215,6 +225,8 @@ header a {
   grid-column: 1;
   font-size: 0.9em;
   margin: 5px;
+  text-align: left;
+  
 }
 
 .products--sale {
@@ -321,6 +333,25 @@ textarea {
   .products img {
     width: 100%;
   }
+
+
+  .guitars .products {
+    animation: show-guitars 1s forwards;
+    opacity: 0;
+  }
+
+  @keyframes show-guitars {
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
+  }
+
 
 footer {
     text-align: center;
