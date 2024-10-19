@@ -1,0 +1,95 @@
+
+.welcome {
+    background-image: url('/images/home-header.jpg');
+    background-size: cover; 
+    background-position-x: right; 
+    background-position-y: bottom;
+    background-repeat: no-repeat; 
+    padding: 50px 20px; 
+    color: white; 
+    min-height: 70vh;
+    position: relative;
+}
+
+.welcome__content {
+position: absolute;
+text-align: center;
+top: 50px;
+left: 50%;
+transform: translateX(-50%);
+min-width: 210px;
+}
+
+
+#home-header {
+width: 100%;
+height: auto;
+max-width: 100%;
+}
+
+#home-info {
+width: 500px;
+height:auto;
+border-radius: 100px;
+}
+
+.review-profile {
+width: 80px;
+height: auto;
+border-radius: 50%;
+float: right;
+}
+
+.reviews__name {
+display: block;
+}
+
+.reviews__content,
+.selling-points  {
+max-width: 1000px;
+display: flex;
+flex-direction: column;
+
+}
+
+.selling-points {
+margin: 50px auto;
+
+}
+
+.reviews__content {
+text-align: left;
+margin: auto;
+}
+
+.reviews__content div {
+margin: 50px;
+
+}
+.reviews {
+text-align: center;
+padding: 50px;
+
+
+}
+.selling-points > *,
+.reviews__content > *{
+flex: 1
+}
+
+.reviews {
+background-color: rgb(227, 227, 227);
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    margin: 50px auto;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.featured h2 {
+    grid-column: -1/1;
+}

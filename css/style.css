@@ -1,3 +1,6 @@
+@import "imports/links.css";
+@import "imports/variables.css";
+
 @font-face {
     font-family: 'BootsAndSpurs';
     src: url('../fonts/BootsAndSpurs.woff2') format('woff2'),
@@ -7,24 +10,25 @@
 }
 
 body { 
+    font-family: var(--text-paragraph), Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 body, .products h3  {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 h1, h2, h3, .logo {
-    font-family: 'BootsAndSpurs';
+    font-family: var(--text-heading);
     text-align: center;
 }
 
 header, 
 footer{
-    background-color: #000000;
+    background-color: var(--color-header-footer);
     color: #fff;
 }
 
@@ -42,170 +46,18 @@ nav li {
 nav {
     display: flex;
     align-items: center;
-    background-color: #000000;
+    background-color: var(--color-header-footer);
     margin-left: 25px;
 }
 
-
-header a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px;
+img {
+    width: 100%;
 }
 
-
-/*Home Page*/
-
-.welcome {
-        background-image: url('/images/home-header.jpg');
-        background-size: cover; 
-        background-position-x: right; 
-        background-position-y: bottom;
-        background-repeat: no-repeat; 
-        padding: 50px 20px; 
-        color: white; 
-        min-height: 70vh;
-        position: relative;
-}
-
-.welcome__content {
-    position: absolute;
-    text-align: center;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: 210px;
-}
-
-
-#home-header {
-   width: 100%;
-   height: auto;
-   max-width: 100%;
-}
-
-#home-info {
-    width: 500px;
-    height:auto;
-    border-radius: 100px;
-}
-
-.review-profile {
-    width: 80px;
-    height: auto;
-    border-radius: 50%;
-    float: right;
-}
-
-.reviews__name {
-    display: block;
-}
-
-.reviews__content,
-.selling-points  {
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.selling-points {
-    margin: 50px auto;
-
-}
-
-.reviews__content {
-    text-align: left;
-    margin: auto;
-}
-
-.reviews__content div {
-    margin: 50px;
-
-}
-.reviews {
-    text-align: center;
-    padding: 50px;
-
-
-}
-.selling-points > *,
-.reviews__content > *{
-    flex: 1
-}
-
-.reviews {
-    background-color: rgb(227, 227, 227);
-}
-
-
-.cta {
-    font-size: 0.9em;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: red;
-    color: #fff;  
-    border-radius: 5px;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-}
-
-.cta:before {
-    content: '';
-    padding: 10px;
-    background-color: #fff;
-    transform: rotate(45deg);
-    position: absolute;
-    height: 100px;
-    top: -40px;
-    left: -100px;
-    transition: left ease-in-out 1s;
-    opacity: 0.3;
-}
-
-.cta:hover:before {
-    left: 110%;
-}
-
-.cta-large {
-    padding: 10px 40px; 
-}
-.cta-small {
-    padding: 8px 20px;
-    font-size: 0.8em;
-    grid-column: 2;
-    grid-row: 2;
-    min-width: 51.2px;
-    text-align: center;
-    margin-top: 5px;
-  }
-  
-
-.cta-sale {
-    background-color: green; 
-}
 
 .current { 
     font-weight: bold;
     text-decoration: underline;
-}
-
-.featured {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 1000px;
-    margin: 50px auto;
-    grid-gap: 20px;
-    justify-content: center;
-}
-
-.featured h2 {
-    grid-column: -1/1;
-}
-
-.featured img {
-    width: 100%
 }
 
 .products {
@@ -237,25 +89,6 @@ header a {
     text-decoration: line-through;
 }
 
-/* Contact Page*/
-
-.contact {
-    max-width: 1000px;
-    margin: 50px auto;
-    text-align: center;
-}
-
-.form-wrapper {
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-}
-
-.form-wrapper > * {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
 
 input, select, textarea {
     border: 1px solid #c4c4c4;
@@ -269,89 +102,6 @@ textarea {
     min-height: 100px;
 }
 
-/*Product Specific Page*/
-
-.product-specific {
-    display: flex;
-    max-width: 1000px;
-    flex-direction: column;
-    margin-bottom: 50px;
-}
-
-.product-specific > * {
-    flex: 1;
-}
-
-.product-specific__details {
-    padding: 0px 30px;
-}
-
-.product-image {
-    width: 100%;
-    max-width: 100%;
-}
-
-.product-image__thumbnails div {
-    flex: 1;
-}
-
-.product-image__thumbnails {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 5px;
-}
-
-.product-image__thumbnails img {
-    width: 100%;
-    height: auto;
-}
-
-.product-specific__price {
-    font-size: 1.5em;
-}
-
-.product-specific__details a {
-    display: block;
-    width: 95.767px;
-    margin: auto;
-}
-
-/* Guitars Page */
-
-.guitars {
-    max-width: 1000px;
-    margin: auto;
-  }
-  
-  .product-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-  }
-  
-  .products img {
-    width: 100%;
-  }
-
-
-  .guitars .products {
-    animation: show-guitars 1s forwards;
-    opacity: 0;
-  }
-
-  @keyframes show-guitars {
-    0% {
-        opacity:0;
-    }
-    50% {
-        opacity:0.5;
-    }
-    100% {
-        opacity:1;
-    }
-  }
-
 
 footer {
     text-align: center;
@@ -359,73 +109,5 @@ footer {
 }
 
 
-@media (min-width: 400px) {
-    .product-list {
-        grid-template-columns: 1fr 1fr;
-    } 
-}
-
-@media (min-width: 600px) {
-    .featured {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .reviews__content,
-    .selling-points {
-    flex-direction: row;
-    }
-
-    .product-specific {
-        flex-direction: column-reverse;
-    }
-
-    .product-specific__details {
-        margin-bottom: 50px;
-    }
-
-    .form-wrapper {
-        flex-direction: row;
-    }
-
-    .selling-points h2 {
-        text-align: center;
-    }
-}
-
-
-
-@media (min-width: 800px) {
-    .featured {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .reviews__content div {
-        margin: 20px;
-
-    }
-
-    .welcome {
-        background-position: right;
-    }
-
-    .welcome__content {
-        top: 100px;
-        left: 100px;
-        transform: none;
-    }
-
-    .cta-large {
-        padding: 10px 80px;
-    }
-
-    .product-list {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .product-specific {
-        flex-direction: row;
-        margin: 50px auto; 
-    }
-}
 
 
